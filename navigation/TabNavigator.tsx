@@ -25,6 +25,7 @@ export function TabNavigator() {
         headerShown: false,
         tabBarStyle: {
           height: 93,
+          paddingTop: 12,
           backgroundColor: theme.colors.background,
           borderTopColor: theme.colors.cardBorder,
         },
