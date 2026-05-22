@@ -10,8 +10,8 @@ import {
 } from '@expo-google-fonts/poppins'
 import { Inter_400Regular } from '@expo-google-fonts/inter'
 import * as SplashScreen from 'expo-splash-screen'
-import { RootNavigator } from './navigation/RootNavigator'
-import { theme } from './shared/theme'
+import { RootNavigator } from './src/navigation/RootNavigator'
+import { theme } from './src/shared/theme'
 
 SplashScreen.preventAutoHideAsync()
 
