@@ -145,7 +145,7 @@ export function CouponCard({ coupon, onPress, onToggleFavorite }: CouponCardProp
         <FavoriteButton testID="favorite-button" onPress={() => onToggleFavorite(coupon.id)}>
           <Ionicons
             name={coupon.isFavorite ? 'heart' : 'heart-outline'}
-            size={20}
+            size={26}
             color={coupon.isFavorite ? theme.colors.primary : theme.colors.text}
           />
         </FavoriteButton>

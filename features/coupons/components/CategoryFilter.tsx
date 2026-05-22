@@ -27,7 +27,7 @@ const CATEGORY_ICONS: Record<CouponCategory, React.FC<SvgProps>> = {
   oriental: IcOriental,
   bar: IcBar,
   carnes: IcCarnes,
-  shopping: IcTodos,
+  shopping: IcBar,
   petiscos: IcPetiscos,
   combos: IcCombos,
 }
