@@ -28,18 +28,19 @@ const Container = styled.TouchableOpacity`
   border-color: ${({ theme }) => theme.colors.cardBorder};
   border-radius: ${({ theme }) => theme.borderRadius.md}px;
   width: 368px;
+  height: 159px;
   overflow: hidden;
   align-self: center;
 `
 
 const ImageContainer = styled.View`
   width: 184px;
-  height: 156px;
+  height: 159px;
 `
 
 const CardImage = styled.Image`
   width: 184px;
-  height: 156px;
+  height: 159px;
   border-radius: ${({ theme }) => theme.borderRadius.md}px;
 `
 
