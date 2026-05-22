@@ -3,10 +3,17 @@ module.exports = function (api) {
   let plugins = [];
 
   plugins.push('react-native-worklets/plugin');
+  plugins.push([
+    'module-resolver',
+    {
+      root: ['.'],
+      alias: { '@': '.' },
+      extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+    },
+  ]);
 
   return {
     presets: ['babel-preset-expo'],
-
     plugins,
   };
 };

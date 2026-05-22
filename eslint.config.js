@@ -8,6 +8,15 @@ module.exports = defineConfig([
     ignores: ['dist/*'],
   },
   {
+    settings: {
+      'import/resolver': {
+        typescript: {
+          alwaysTryTypes: true,
+          project: './tsconfig.json',
+        },
+      },
+      'import/extensions': ['.ts', '.tsx', '.js', '.jsx', '.svg'],
+    },
     rules: {
       'react/display-name': 'off',
     },

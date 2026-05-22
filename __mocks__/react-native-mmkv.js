@@ -1,6 +1,9 @@
-const MMKV = jest.fn().mockImplementation(() => ({
+const mockStorage = {
   set: jest.fn(),
   getString: jest.fn().mockReturnValue(null),
-  delete: jest.fn(),
-}))
-module.exports = { MMKV }
+  remove: jest.fn(),
+}
+
+const createMMKV = jest.fn().mockReturnValue(mockStorage)
+
+module.exports = { createMMKV }
