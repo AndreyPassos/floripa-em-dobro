@@ -2,6 +2,8 @@ import React from 'react'
 import styled, { useTheme } from 'styled-components/native'
 import { Ionicons } from '@expo/vector-icons'
 
+import IcFilters from '@/assets/icons/ic_filters.svg'
+
 interface SearchBarProps {
   value: string
   onChangeText: (text: string) => void
@@ -50,7 +52,7 @@ export function SearchBar({ value, onChangeText }: SearchBarProps) {
           returnKeyType="search"
         />
       </InnerRow>
-      <Ionicons name="list" size={16} color={theme.colors.textMuted} />
+      <IcFilters />
     </Container>
   )
 }

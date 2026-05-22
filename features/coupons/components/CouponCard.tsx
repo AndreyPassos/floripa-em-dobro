@@ -85,7 +85,7 @@ const BonusText = styled.Text`
 const Content = styled.View`
   flex: 1;
   padding: ${({ theme }) => theme.spacing.md}px;
-  justify-content: space-between;
+  justify-content: flex-start;
 `
 
 const FavoriteButton = styled.TouchableOpacity`
@@ -96,19 +96,19 @@ const Title = styled.Text`
   color: ${({ theme }) => theme.colors.text};
   font-family: ${({ theme }) => theme.typography.fontSemiBold};
   font-size: ${({ theme }) => theme.typography.size.base}px;
-  margin-top: ${({ theme }) => theme.spacing.xs}px;
+  margin-top: 28px;
 `
 
 const Description = styled.Text`
   color: ${({ theme }) => theme.colors.text};
   font-family: ${({ theme }) => theme.typography.fontRegular};
   font-size: ${({ theme }) => theme.typography.size.xs}px;
-  flex: 1;
   margin-top: ${({ theme }) => theme.spacing.xs}px;
 `
 
 const StatusRow = styled.View`
   align-items: flex-end;
+  margin-top: auto;
 `
 
 const StatusBadge = styled.View<{ status: 'aberto' | 'fechado' }>`

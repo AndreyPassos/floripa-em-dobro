@@ -51,8 +51,8 @@ const SearchBarPositioner = styled.View`
   position: absolute;
   top: 0;
   bottom: 0;
-  left: ${({ theme }) => theme.spacing.lg}px;
-  right: ${({ theme }) => theme.spacing.lg}px;
+  left: 56px;
+  right: 56px;
   justify-content: center;
 `
 
